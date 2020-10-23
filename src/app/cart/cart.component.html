@@ -15,12 +15,12 @@
         </div>
         
         <ng-container *ngIf="travelSum >= 200 && travelSum < 500;else second">
-            <p>10% Discount</p>
+            <p>10% Discount: -{{travelSum *0.1}}€</p>
             <h3>Discounted Price: {{travelSum* 0.9}}€</h3>
         </ng-container>
         <ng-template #second>
             <ng-container *ngIf="travelSum >= 500">
-                <p>20% Discount</p>
+                <p>20% Discount: - {{travelSum *0.2}}€</p>
                 <h3>Discounted Price: {{travelSum* 0.8}}€</h3>
             </ng-container>
         </ng-template>
