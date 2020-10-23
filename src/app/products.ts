@@ -40,7 +40,7 @@ export const products = [
       image: "assets/img/capetown.jpg"
     },
     {
-      destination: "Reykjavik",
+      destination: "Island",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni veniam dolor ducimus inventore quam, ullam reiciendis. Ad aperiam voluptatum aliquam cumque sunt molestias earum officia magnam error. Officia, dicta.",
       startDate: "09.01.2022",
       duration: 33,
