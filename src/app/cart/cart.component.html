@@ -3,7 +3,7 @@
     <div class="cart-item" *ngFor="let item of items">
         <span>{{ item.destination }} - </span>
         <span>Start: {{ item.startDate }} - </span>
-        <span>Duration: {{ item.duration }}</span>
+        <span>Duration: {{ item.duration }} days</span>
         <span style="float:right">{{ item.price | currency }}</span>
         <hr>
     </div>

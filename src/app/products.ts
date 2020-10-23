@@ -24,7 +24,7 @@ export const products = [
       image: "assets/img/cuba2.jpg"
     },
     {
-      destination: "Athens",
+      destination: "Greece",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni veniam dolor ducimus inventore quam, ullam reiciendis. Ad aperiam voluptatum aliquam cumque sunt molestias earum officia magnam error. Officia, dicta.",
       startDate: "19.02.2021",
       duration: 8,
@@ -32,7 +32,7 @@ export const products = [
       image: "assets/img/athens.jpg"
     },
     {
-      destination: "Cape Town",
+      destination: "South Africa",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni veniam dolor ducimus inventore quam, ullam reiciendis. Ad aperiam voluptatum aliquam cumque sunt molestias earum officia magnam error. Officia, dicta.",
       startDate: "07.04.2021",
       duration: 3,
@@ -40,7 +40,7 @@ export const products = [
       image: "assets/img/capetown.jpg"
     },
     {
-      destination: "Island",
+      destination: "Iceland",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni veniam dolor ducimus inventore quam, ullam reiciendis. Ad aperiam voluptatum aliquam cumque sunt molestias earum officia magnam error. Officia, dicta.",
       startDate: "09.01.2022",
       duration: 33,

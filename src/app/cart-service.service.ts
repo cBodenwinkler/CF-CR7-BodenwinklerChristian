@@ -23,7 +23,7 @@ export class CartServiceService {
     return this.items;
   }
 
-  //ADDON-Remove Bill Calculation:
+  //ADDON-Remove Price Calculation:
   clearSum() {
     this.sum = 0;
     return this.sum;
