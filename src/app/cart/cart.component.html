@@ -9,19 +9,19 @@
     </div>
 
 
-    <div [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="border-left border-secondary pl-3">
+    <div [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="text-right pl-3">
         <div>
-            <h4>Price: {{ travelSum }}€</h4>
+            <h4>Price: {{ sum }}€</h4>
         </div>
         
-        <ng-container *ngIf="travelSum >= 200 && travelSum < 500;else second">
-            <p>10% Discount: -{{travelSum *0.1}}€</p>
-            <h3>Discounted Price: {{travelSum* 0.9}}€</h3>
+        <ng-container *ngIf="sum >= 200 && sum < 500;else second">
+            <p>10% Discount: -{{sum * 0.1}}€</p>
+            <h3>Discounted Price: {{sum * 0.9}}€</h3>
         </ng-container>
         <ng-template #second>
-            <ng-container *ngIf="travelSum >= 500">
-                <p>20% Discount: - {{travelSum *0.2}}€</p>
-                <h3>Discounted Price: {{travelSum* 0.8}}€</h3>
+            <ng-container *ngIf="sum >= 500">
+                <p>20% Discount: - {{sum * 0.2}}€</p>
+                <h3>Discounted Price: {{sum * 0.8}}€</h3>
             </ng-container>
         </ng-template>
     </div>

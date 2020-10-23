@@ -14,7 +14,7 @@ export class CartComponent implements OnInit {
   items;
   checkoutForm;
   travelItems = this.cartService.items;
-  travelSum = 0;
+  sum = 0;
 
   constructor(private cartService: CartServiceService, private formBuilder: FormBuilder) {
     this.checkoutForm = this.formBuilder.group({
@@ -28,8 +28,8 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getItems();
 
     for(let i = 0; i<this.travelItems.length;i++){
-      this.travelSum += this.travelItems[i].price;
-      // console.log(this.travelSum);
+      this.sum += this.travelItems[i].price;
+      // console.log(this.um);
     }
   }
 
@@ -38,7 +38,7 @@ export class CartComponent implements OnInit {
     console.table(customerData);
  
     this.items = this.cartService.clearCart();
-    this.travelSum = this.cartService.clearSum();
+    this.sum = this.cartService.clearSum();
     this.checkoutForm.reset();
   } 
 }

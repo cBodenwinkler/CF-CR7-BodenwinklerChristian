@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class CartServiceService {
   items=[];
   //ADDON:
-  travelSum= 0;
+  sum= 0;
 
   constructor() { }
 
@@ -23,9 +23,9 @@ export class CartServiceService {
     return this.items;
   }
 
-  //ADDON:
+  //ADDON-Remove Bill Calculation:
   clearSum() {
-    this.travelSum = 0;
-    return this.travelSum;
+    this.sum = 0;
+    return this.sum;
   }
 }
