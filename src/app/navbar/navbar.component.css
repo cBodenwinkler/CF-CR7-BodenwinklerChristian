@@ -1,0 +1,15 @@
+img {
+    height:50px;
+}
+
+#navDiv {
+    /* border: 1px solid black; */
+}
+
+nav {
+    font-weight:600;
+}
+
+.linkClass {
+    color:white;
+}

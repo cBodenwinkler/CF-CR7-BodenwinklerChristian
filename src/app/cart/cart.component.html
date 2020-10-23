@@ -1,0 +1,46 @@
+<div class="container my-5">
+    <h3 class="border-bottom border-dark  pb-3">Cart</h3>
+    <div class="cart-item" *ngFor="let item of items">
+        <span>{{ item.destination }} - </span>
+        <span>Start: {{ item.startDate }} - </span>
+        <span>Duration: {{ item.duration }}</span>
+        <span style="float:right">{{ item.price | currency }}</span>
+        <hr>
+    </div>
+
+
+    <div [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="border-left border-secondary pl-3">
+        <div>
+            <h4>Price: {{ travelSum }}€</h4>
+        </div>
+        
+        <ng-container *ngIf="travelSum >= 200 && travelSum < 500;else second">
+            <p>10% Discount</p>
+            <h3>Discounted Price: {{travelSum* 0.9}}€</h3>
+        </ng-container>
+        <ng-template #second>
+            <ng-container *ngIf="travelSum >= 500">
+                <p>20% Discount</p>
+                <h3>Discounted Price: {{travelSum* 0.8}}€</h3>
+            </ng-container>
+        </ng-template>
+    </div>
+
+
+
+    <div class="my-2 pt-5">
+        <h4 class="my-3 border-bottom border-dark">Checkout Form:</h4>
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+            <div>
+                <p><label for="name">Name:</label></p>
+                <input id="name" type="text" formControlName="name">
+            </div>
+            <br>
+            <div>
+                <p><label for="address">Address:</label></p>
+                <input id="address" type="text" formControlName="address">
+            </div>
+            <button class="btn btn-outline-secondary mt-3" style="width:30%" type="submit">Purchase</button>
+        </form>
+    </div>
+</div>
