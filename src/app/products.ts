@@ -32,19 +32,19 @@ export const products = [
       image: "assets/img/athens.jpg"
     },
     {
-      destination: "South Africa",
+      destination: "Mars Colony",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni veniam dolor ducimus inventore quam, ullam reiciendis. Ad aperiam voluptatum aliquam cumque sunt molestias earum officia magnam error. Officia, dicta.",
       startDate: "07.04.2021",
-      duration: 3,
-      price: 50,
-      image: "assets/img/capetown.jpg"
+      duration: 1000,
+      price: 10000000,
+      image: "assets/img/mars.webp"
     },
     {
       destination: "Iceland",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni veniam dolor ducimus inventore quam, ullam reiciendis. Ad aperiam voluptatum aliquam cumque sunt molestias earum officia magnam error. Officia, dicta.",
       startDate: "09.01.2022",
       duration: 33,
-      price: 2500,
+      price: 50,
       image: "assets/img/island.jpg"
     }
    ];

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CartServiceService {
   items=[];
-  //ADDON:
+  //ADDON for the Price Part of Cart:
   sum= 0;
 
   constructor() { }

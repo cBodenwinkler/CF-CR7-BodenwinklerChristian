@@ -1,0 +1,10 @@
+.detailCard {
+    background-color: rgba(255,255,255,0.9) !important;
+    border:solid lightgray 5px;
+    border-radius: 25px;
+}
+
+img {
+    border-radius: 20px 0 0 20px;
+    height:100%;
+}

@@ -5,3 +5,13 @@
 hr {
     border:gray 1px solid;
 }
+
+.cartClass {
+    background-color: rgba(255,255,255,0.9) !important;
+    border: 5px solid lightgray;
+    border-radius: 15px;
+}
+
+.padReduce {
+    margin-bottom: 0px;
+}

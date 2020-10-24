@@ -1,9 +1,15 @@
 .card {
     border: 3px solid lightgray;
     border-radius: 15px;
-    background-color: rgba(255,255,255,0.5) !important;
+    background-color: rgba(255,255,255,0.9) !important;
 }
 
 .card-img-top {
     border-radius:15px;
+}
+
+input {
+    border: solid lightgray 3px;
+    border-radius: 0 0 15px 15px;
+    font-size: 1.5rem;
 }

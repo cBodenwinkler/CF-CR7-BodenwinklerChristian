@@ -1,43 +1,43 @@
-<div class="container my-5">
+<div class="container my-5 cartClass p-5">
     <h3 class="border-bottom border-dark  pb-3">Cart</h3>
     <div class="cart-item" *ngFor="let item of items">
         <span>{{ item.destination }} - </span>
         <span>Start: {{ item.startDate }} - </span>
         <span>Duration: {{ item.duration }} days</span>
-        <span style="float:right">{{ item.price | currency }}</span>
+        <span style="float:right">{{ item.price | currency:"EUR" }}</span>
         <hr>
     </div>
 
 
     <div [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="text-right pl-3">
         <div>
-            <h4>Price: {{ sum }}€</h4>
+            <h4>Price: {{ sum | currency:"EUR"}}</h4>
         </div>
         
         <ng-container *ngIf="sum >= 200 && sum < 500;else second">
-            <p>10% Discount: -{{sum * 0.1}}€</p>
-            <h3>Discounted Price: {{sum * 0.9}}€</h3>
+            <p>10% Discount: -{{sum * 0.1 | currency:"EUR"}}</p>
+            <h3>Discounted Price: {{sum * 0.9 | currency:"EUR"}}</h3>
         </ng-container>
         <ng-template #second>
             <ng-container *ngIf="sum >= 500">
-                <p>20% Discount: - {{sum * 0.2}}€</p>
-                <h3>Discounted Price: {{sum * 0.8}}€</h3>
+                <p>20% Discount: - {{sum * 0.2 | currency:"EUR"}}</p>
+                <h3>Discounted Price: {{sum * 0.8 | currency:"EUR"}}</h3>
             </ng-container>
         </ng-template>
     </div>
 
 
 
-    <div class="my-2 pt-5">
+    <div class="my-2 pt-3">
         <h4 class="my-3 border-bottom border-dark">Checkout Form:</h4>
         <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
             <div>
-                <p><label for="name">Name:</label></p>
+                <p class="padReduce"><label for="name">Name:</label></p>
                 <input id="name" type="text" formControlName="name">
             </div>
             <br>
             <div>
-                <p><label for="address">Address:</label></p>
+                <p class="padReduce"><label for="address">Address:</label></p>
                 <input id="address" type="text" formControlName="address">
             </div>
             <button class="btn btn-outline-secondary mt-3" style="width:30%" type="submit">Purchase</button>
